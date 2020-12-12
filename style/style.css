@@ -1,0 +1,397 @@
+@import 'font.css';
+
+/* ROOT START*/
+
+:root {
+    --o700: 'OpenSans-Bold';
+    --o400: 'OpenSans-Regular';
+    --o300: 'OpenSans-Light';
+    --BD: 'BlessedDay';
+    --white: #ffffff;
+    --main: #34495e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 940px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+body {
+    font-family: var(--o300);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ROOT END */
+
+header {
+    background: url(../images/header_bg.png) no-repeat center/cover;
+    color: var(--white);
+}
+
+nav p {
+    font-family: var(--BD);
+    font-size: 72px;
+    line-height: 56px;
+    padding: 70px 0 197px;
+}
+
+.nav__list {
+    width: 530px;
+    margin-top: 90px;
+}
+
+.nav__link {
+    font-family: var(--o400);
+    font-size: 18px;
+    line-height: 14px;
+    padding: 0 9px 17px 10px;
+    display: block;
+    color: var(--white);
+    transition: color 0.5s background 0.5s;
+}
+
+.nav__link:hover {
+    border-bottom: #1abc9c solid 4px;
+}
+
+.login {
+    font-family: var(--o700);
+}
+
+.header__info {
+    width: 490px;
+}
+
+.header__title {
+    padding: 60px 0 47px;
+    font-family: var(--o400);
+    font-size: 30px;
+    line-height: 29px;
+}
+
+.header__text {
+    line-height: 30px;
+    width: 478px;
+    font-size: 18px;
+    font-family: var(--o300);
+    margin-bottom: 62px;
+}
+
+.btn {
+    color: var(--white);
+    background: #1abc9c;
+    line-height: 14px;
+    font-size: 18px;
+    font-family: var(--o400);
+    border-radius: 4px;
+    padding: 20px 28px 21px 24px;
+    display: inline-block;
+    transition: color 0.5s, background 0.5s;
+}
+
+.btn:hover {
+    background: #3498db;
+}
+
+.header__btn:hover,
+.form__btn:hover {
+    background: #1abc9c;
+}
+
+.header__btn {
+    background: #3498db;
+    padding: 20px 38px 21px 35px;
+}
+
+.circle {
+    color: #34495e;
+    background: var(--white);
+    line-height: 8px;
+    font-size: 15px;
+    font-family: var(--o400);
+    padding: 4px 7px 5px 6px;
+    border-radius: 50%;
+    margin: 0 -10px;
+    position: relative;
+}
+
+.claymore {
+    padding: 133px 0 130px 0;
+    color: var(--main);
+}
+
+.claymore__info {
+    width: 604px;
+}
+
+.claymore__info h3 {
+    font-size: 24px;
+    font-family: var(--o400);
+    line-height: 18px;
+    padding-bottom: 30px;
+}
+
+.claymore__info p {
+    line-height: 29px;
+    font-family: var(--o400);
+    font-size: 18px;
+}
+
+.claymore__statistics {
+    width: 240px;
+    align-items: flex-end;
+}
+
+.claymore__statistics-img {
+    width: 82px;
+    height: 84px;
+}
+
+.service {
+    background: #f6f6f6;
+    padding: 76px 0 90px;
+    color: var(--main);
+}
+
+.service__title {
+    font-size: 20px;
+    font-family: var(--o400);
+    padding: 28px 0 24px;
+    line-height: 20px;
+}
+
+.service__info {
+    font-family: var(--o300);
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    width: 305px;
+}
+
+.macbook {
+    background: url(../images/mac_bg.png) no-repeat center/cover;
+    color: var(--white);
+    height: 512px;
+}
+
+.macbook__title {
+    padding: 62px 0 12px;
+    font-size: 30px;
+    line-height: 32px;
+    font-family: var(--o400);
+}
+
+.macbook__info {
+    line-height: 14px;
+    font-size: 18px;
+    padding-bottom: 96px;
+}
+
+.macbook__img {
+    margin-bottom: -62px;
+    display: inline-block;
+}
+
+.comments {
+    padding: 200px 0 102px;
+    color: var(--main);
+}
+
+.comments__title {
+    text-align: center;
+    padding-bottom: 72px;
+    line-height: 45px;
+    font-family: var(--o300);
+    font-size: 48px;
+}
+
+.left,
+.right {
+    width: 455px;
+}
+
+.comments__info {
+    padding-bottom: 35px;
+}
+
+.comments__content-title {
+    padding: 31px 21px;
+    line-height: 22px;
+    font-size: 24px;
+    font-family: var(--o400);
+}
+
+.comments__content-info {
+    line-height: 18px;
+    font-size: 14px;
+    padding-left: 21px;
+}
+
+.form {
+    background: #34495e;
+    color: var(--white);
+    padding: 110px 0 115px;
+}
+
+.form__title {
+    line-height: 20px;
+    padding-bottom: 26px;
+    font-size: 24px;
+    font-family: var(--o400);
+}
+
+.form__info {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 43px;
+}
+
+.forms__location {
+    font-size: 21px;
+    display: block;
+    padding: 0 10px 15px 0;
+}
+
+.forms__number {
+    font-size: 16px;
+    display: block;
+    padding: 0px 10px 19px 0;
+}
+
+.forms__img {
+    width: 20px;
+    height: 14px;
+    margin-right: 6px;
+    display: block;
+}
+
+.forms__ssilka {
+    color: var(--white);
+    font-family: var(--o400);
+    font-size: 14px;
+    line-height: 13px;
+    padding-top: 4px;
+}
+
+.forms__message{
+    padding-top: 0;
+}
+
+input,
+textarea {
+    background: #5d6d7e;
+    padding: 17px 0 15px 13px;
+    border-radius: 4px;
+    width: 220px;
+    border: none;
+    outline: none;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--white);
+    font-family: var(--o400);
+    font-size: 13px;
+    line-height: 14px;
+}
+
+.subject_arrow{
+    position: relative;
+}
+
+.subject {
+    width: 455px;
+}
+
+.arrow {
+    background: #1abc9c;
+    color: var(--white);
+    border-radius: 4px;
+    width: 40px;
+    height: 32px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
+
+textarea {
+    height: 152px;
+    width: 455px;
+    resize: none;
+}
+
+.form__button {
+    padding: 22px 62px;
+}
+
+.form__btn {
+    margin-left: 15px;
+    padding: 21px 58px 22px 53px;
+    background: #3498db;
+}
+
+footer {
+    background: #2c3e50;
+    color: var(--white);
+    padding: 76px 0 67px;
+    text-align: center;
+}
+
+footer p {
+    font-family: var(--o400);
+    line-height: 17px;
+}
+
+footer a {
+    color: var(--white);
+}
+
+footer a:hover{
+    color: var(--main);
+    font-size: 28px;;
+}
